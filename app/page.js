@@ -1,12 +1,20 @@
-import React from "react";
-import Navbar from "./navbar";
+"use client";
+import React from "react";;
+import { MovieProvider, MovieContext } from "./context";
+import Navbar from "./navbar"
+import Slider from "./slider";
+import HomePage from "./homepage";
 
-function App() {
+
+const Page = () => {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <MovieProvider>
+      <Navbar/>
+      <Slider/>
+      <HomePage /> 
+    
+    </MovieProvider>
   );
-}
+};
 
-export default App;
+export default Page;
