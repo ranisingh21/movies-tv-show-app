@@ -1,19 +1,20 @@
 "use client";
 import React from "react";;
-import { MovieProvider, MovieContext } from "./context";
+import { MovieDataProvider, MovieDataContext } from "./context";
 import Navbar from "./navbar"
 import Slider from "./slider";
 import HomePage from "./homepage";
+import Footer from "./footer";
 
 
 const Page = () => {
   return (
-    <MovieProvider>
+    <MovieDataProvider>
       <Navbar/>
       <Slider/>
-      <HomePage /> 
-    
-    </MovieProvider>
+      <HomePage />
+      <Footer/> 
+    </MovieDataProvider>
   );
 };
 

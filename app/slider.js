@@ -2,17 +2,28 @@ import React from 'react';
 
 function Slider() {
 return (
-    
+    <> 
+       <div className="sliderCotainer">
+       <div className="imageContainer1">
+    <img 
+        src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/400x600/2024/abhishek-kapoor-s-next/abhishek-kapoor-s-next-1737014981.jpg" 
+        className="imageContainer" 
+        alt="Second Slide" 
+    />
+</div>
         <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
         <div className="carousel-item active">
-            <img src="https://m.media-amazon.com/images/I/717RUPA1bDL._SX3000_.jpg" className="d-block w-100" alt="First Slide" />
+            <img src="https://v3img.voot.com/v3Storage/assets/16x9-1728316195515.jpg" className="d-block w-100" alt="First Slide" />
         </div>
         <div className="carousel-item">
-            <img src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg" className="d-block w-100" alt="Second Slide" />
+            <img src="https://wallpapercave.com/wp/wp1934740.jpg" className="d-block w-100" alt="Second Slide" />
         </div>
         <div className="carousel-item">
-            <img src="https://m.media-amazon.com/images/I/71j8damPo5L._SX3000_.jpg" className="d-block w-100" alt="Third Slide" />
+            <img src="https://img.paisawapas.com/ovz3vew9pw/2023/07/27165945/Rectangle-1yeh-hai-chahatein-serial.png" className="d-block w-100" alt="Third Slide" />
+        </div>
+        <div className="carousel-item">
+            <img src="https://wallpapercave.com/wp/wp4102519.jpg" className="d-block w-100" alt="Third Slide" />
         </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -26,7 +37,15 @@ return (
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         </div>
-            
+        <div className="imageContainer2">
+    <img 
+        src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/400x600/2025/bhooth-bangla/bhooth-bangla-1737454169.jpg" 
+        className="imageContainer" 
+        alt="Second Slide" 
+    />
+   </div>
+        </div>
+    </>        
 );
 }
 

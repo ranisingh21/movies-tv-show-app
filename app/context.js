@@ -1,23 +1,30 @@
-"use client";
+"use client"
 
 import { createContext, useState, useEffect } from "react";
 
-export const MovieContext = createContext();
+export const MovieDataContext = createContext();
 
-export const MovieProvider = ({ children }) => {
+export const MovieDataProvider = ({ children }) => {
   const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState("avenger");
+  const [query, setQuery] = useState("avenger"); 
   const apiKey = "8d887131";
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
-      .then((res) => res.json())
-      .then((data) => setMovies(data.Search || []));
+    const fetchMovieData = async () => {
+      try {
+        const res = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=${apiKey}`);
+        const data = await res.json();
+        setMovies(data.Search || []);
+      } catch (err) {
+        console.error("Fetch error:", err);
+      }
+    };
+    fetchMovieData();
   }, [query]);
 
   return (
-    <MovieContext.Provider value={{ movies, setQuery }}>
+    <MovieDataContext.Provider value={{ movies, setQuery }}>
       {children}
-    </MovieContext.Provider>
+    </MovieDataContext.Provider>
   );
 };
