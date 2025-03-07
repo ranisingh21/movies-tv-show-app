@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import { MovieContext } from "./context"; 
+import {  MovieDataContext } from "./context"
+
 
 function Homepage() {
-  const { movies } = useContext(MovieContext);
+  const { movies } = useContext( MovieDataContext);
 
   if (!movies || movies.length === 0) {
     return <p>No movies found.</p>;
@@ -12,17 +13,13 @@ function Homepage() {
     <>
       <h2>Movie List</h2>
       <div className="movie-container">
-      {movies.map((movie) => (
-    <div  className="movie-card"
-        key={movie.imdbID}>
+  {movies.map((movie) => (
+    <div key={movie.imdbID} className="movie-card">
       <img src={movie.Poster} alt={movie.Title}  />
       <h3>{movie.Title} ({movie.Year})</h3>
-      <p>Plot: {movie.Plot}</p>
-      <p>Rating:{movie.imdbRating}</p>
     </div>
   ))}
 </div>
-
     </>
   );
 }

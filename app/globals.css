@@ -13,7 +13,7 @@
 }
 
 .search-bar-icon {
-  width: 300px; 
+  width: 300px;
   border-radius: 18px;
   text-align: center;
   border: solid 2px white;
@@ -27,7 +27,7 @@
   width: 260px;
   text-align: center;
   border-radius: 18px 0 0 18px;
-} 
+}
 
 .search-button {
   border-radius: 18px;
@@ -42,32 +42,70 @@
   width: 25px;
 }
 
-.icon {
-  width: 229px;
+.navbar_tittle {
+  width: 262px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
 }
 
-.icon h3 {
-  margin-top: 20px;
+.navbar_tittle h2 {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .profile img {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
-.carousel-inner{
-  height: 500px;
-  width: 50px;
+.carousel {
+  border: 2px solid black;
   margin: auto;
+  margin-top: 13px;
+  width: 950px;
 }
 
-.carousel{
-  border: 2px solid black; 
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top:13px;
+.carousel-inner img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.sliderCotainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstImage {
+  border: 1px solid black;
+  width: 20px;
+  height: 50px;
+}
+
+.imageContainer {
+  width: 300px;
+  height: auto;
+}
+
+.imageContainer1 {
+  width: 300px;
+  height: auto;
+  margin-left: 100px;
+}
+
+.imageContainer2 {
+  width: 300px;
+  height: auto;
+  margin-right: 100px;
+}
+
+h2 {
+  text-align: center;
 }
 
 .movie-container {
@@ -78,10 +116,68 @@
 }
 
 .movie-card {
-  width: 18%; 
-  min-width: 180px; 
+  width: 18%;
+  min-width: 180px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   padding: 10px;
   text-align: center;
 }
 
+.footer-container {
+  background-color: #222222;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 22%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-heading {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f8f8f8;
+}
+
+.footer-list {
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.justujuImage img {
+  height: 120px;
+  width: 330px;
+  object-fit: cover;
+  padding-right: 20px;
+}
+
+.footer-list li:hover {
+  color: #bbb;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  margin-top: 10px;
+}
