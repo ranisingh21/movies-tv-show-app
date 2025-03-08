@@ -42,7 +42,7 @@
   width: 25px;
 }
 
-.navbar_tittle {
+.navbar_title {
   width: 262px;
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@
   margin-left: 10px;
 }
 
-.navbar_tittle h2 {
+.navbar_title h2 {
   margin-top: 30px;
   font-size: 22px;
   font-weight: bold;
@@ -64,10 +64,11 @@
 }
 
 .carousel {
-  border: 2px solid black;
-  margin: auto;
   margin-top: 13px;
   width: 950px;
+  box-shadow: 0 0 20px  white;
+  border:2px solid black;
+
 }
 
 .carousel-inner img {
@@ -96,16 +97,31 @@
   width: 300px;
   height: auto;
   margin-left: 100px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
+   width: 18%;
+  text-align: center;
+   padding: 10px;
+}
+
+.imageContainer1:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px white;
 }
 
 .imageContainer2 {
   width: 300px;
   height: auto;
   margin-right: 100px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
+  width: 18%;
+    text-align: center;
+    padding: 10px;
 }
 
-h2 {
-  text-align: center;
+
+.imageContainer2:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px white;
 }
 
 .movie-container {
@@ -117,10 +133,19 @@ h2 {
 
 .movie-card {
   width: 18%;
-  min-width: 180px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
   padding: 10px;
   text-align: center;
+  margin-left:20px;
+}
+.movie-card  img{
+  height:350x;
+
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px white;
 }
 
 .footer-container {
@@ -180,4 +205,57 @@ h2 {
   font-size: 14px;
   border-top: 1px solid #444;
   margin-top: 10px;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:Jet Black;
+}
+
+.modalContent {
+  background: pink;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #FFD700;
+  width: 900px;
+  height: 700px;
+}
+
+.modalContent:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px black;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.poster {
+  width: 200px;
+}
+
+.genre,
+.director,
+.plot,
+.year,
+.rating,
+.writer,
+.language {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.heading {
+  text-align: center;
+  font-weight: bold;
 }

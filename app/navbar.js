@@ -1,33 +1,28 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { MovieDataContext } from "./context";
 
 const Navbar = () => {
   const { setQuery } = useContext(MovieDataContext);
-  const [searchTerm, setSearchTerm] = useState(""); 
-
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault(); 
-    setQuery(searchTerm); 
-  };
 
   return (
     <nav className="navbar">
-      <div className="navbar_tittle">
+      <div className="navbar_title">
         <img src="/clapperboard_tiny.png" alt="Clapperboard" />
         <h2>Movies & TV Shows</h2>
       </div>
 
-      <form onSubmit={handleSubmit} className="search-bar-icon">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          setQuery(e.target.search.value);
+        }}
+        className="search-bar-icon"
+      >
         <input
           type="text"
+          name="search"
           className="search-bar-input"
           placeholder="Search movies..."
-          value={searchTerm}
-          onChange={handleSearch}
         />
         <button type="submit" className="search-button">
           <img
