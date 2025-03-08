@@ -1,27 +1,35 @@
-import { useContext } from "react";
-import {  MovieDataContext } from "./context"
+import { useContext, useState } from "react";
+import { MovieDataContext } from "./context";
+import MovieModal from "./movieDetails";
 
-
-function Homepage() {
-  const { movies } = useContext( MovieDataContext);
-
-  if (!movies || movies.length === 0) {
-    return <p>No movies found.</p>;
-  }
+const Homepage = () => {
+  const { movies, fetchMovies, selectedMovie } = useContext(MovieDataContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <>
-      <h2>Movie List</h2>
+    <div>
+      <h1 className="heading">Movie List</h1>
       <div className="movie-container">
-  {movies.map((movie) => (
-    <div key={movie.imdbID} className="movie-card">
-      <img src={movie.Poster} alt={movie.Title}  />
-      <h3>{movie.Title} ({movie.Year})</h3>
+        {movies.map((movie) => (
+          <div key={movie.imdbID} className="movie-card">
+            <img
+              src={movie.Poster}
+              alt={movie.Title}
+              onClick={() => {
+                fetchMovies(movie.imdbID);
+                setIsModalOpen(true);
+              }}
+            />
+          </div>
+        ))}
+      </div>
+
+      {isModalOpen && selectedMovie && (
+        <MovieModal movie={selectedMovie} onClose={() => setIsModalOpen(false)} />
+      )}
     </div>
-  ))}
-</div>
-    </>
   );
-}
+};
 
 export default Homepage;
+
