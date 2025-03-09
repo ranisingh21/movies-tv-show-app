@@ -1,6 +1,7 @@
-import React from "react";
+import React from "react";;
 
 const MovieModal = ({ movie, onClose }) => {
+  console.log(movie,"rani")
   return (
     <div className="modalContainer">
       <div className="modalContent">
@@ -11,14 +12,17 @@ const MovieModal = ({ movie, onClose }) => {
          <img className="poster" src={movie.Poster} alt={movie.Title} />
         <p className="plot">{movie.Plot}</p>
         <p className="year">Year: {movie.Year}</p>
-        <p className="rating">IMDB Rating: {movie.imdbRating}</p>
         <p className="genre">Genre: {movie.Genre}</p>
         <p className="director">Director: {movie.Director}</p>
         <p className="language">Language: {movie.Language}</p>
-        <p className="writer">Writer: {movie.Writer}</p>   
+        <p className="writer">Writer: {movie.Writer}</p> 
+      
       </div>
     </div>
   );
 };
 
 export default MovieModal;
+
+
+
