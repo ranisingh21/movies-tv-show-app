@@ -20,7 +20,7 @@ return (
             <img src="https://wallpapercave.com/wp/wp1934740.jpg" className="d-block w-100" alt="Second Slide" />
         </div>
         <div className="carousel-item">
-            <img src="https://img.paisawapas.com/ovz3vew9pw/2023/07/27165945/Rectangle-1yeh-hai-chahatein-serial.png" className="d-block w-100" alt="Third Slide" />
+            <img src="https://m.media-amazon.com/images/M/MV5BOThkYjg5ZjctNmIyNS00MzY2LTg1MDgtYjcxZDVjNjdhYjE1XkEyXkFqcGc@._V1_.jpg" className="d-block w-100" alt="Third Slide" />
         </div>
         <div className="carousel-item">
             <img src="https://wallpapercave.com/wp/wp4102519.jpg" className="d-block w-100" alt="Third Slide" />
