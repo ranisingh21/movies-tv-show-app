@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div className="footer-container">
             <div className="footer-content">
-                <div className="footer-row">
+                <div className="footerRow">
 
                     <div className="footer-column">
                         <h5 className="footer-heading">ABOUT</h5>
@@ -30,9 +30,7 @@ function Footer() {
                         </ul>
                     </div>
 
-                    {/* <div className="footer-column justujuImage">
-                        <img src="/unnamed.jpg" alt="Company Logo" />
-                    </div> */}
+                  
 
                     <div className="footer-column">
                         <h5 className="footer-heading">CONSUMER POLICY</h5>
@@ -58,11 +56,12 @@ function Footer() {
                     </div>
 
                 </div>
-
+                
                 <div className="footer-bottom">
                     <p>&copy; 2025 City Guide App - All Rights Reserved</p>
                 </div>
             </div>
+            
         </div>
     );
 }

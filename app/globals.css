@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   color: white;
+  border: 5px solid #000;
 }
 
 .search-bar-icon {
@@ -57,8 +58,8 @@
 }
 
 .profile img {
-  width: 65px;
-  height: 65px;
+  width: 79px;
+  height: 79px;
   object-fit: cover;
   margin-right: 10px;
 }
@@ -66,9 +67,8 @@
 .carousel {
   margin-top: 13px;
   width: 950px;
-  box-shadow: 0 0 20px  white;
-  border:2px solid black;
-
+  box-shadow: 0 0 20px white;
+  border: 5px solid black;
 }
 
 .carousel-inner img {
@@ -94,13 +94,13 @@
 }
 
 .imageContainer1 {
-  width: 300px;
-  height: auto;
-  margin-left: 100px;
+  margin-left: 80px;
+  background-color: #000;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
-   width: 18%;
+  width: 18%;
   text-align: center;
-   padding: 10px;
+  padding: 13px;
+  border-radius: 8px;
 }
 
 .imageContainer1:hover {
@@ -109,15 +109,15 @@
 }
 
 .imageContainer2 {
-  width: 300px;
-  height: auto;
+  background-color: #000;
   margin-right: 100px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
   width: 18%;
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 80px;
+  border-radius: 8px;
 }
-
 
 .imageContainer2:hover {
   transform: scale(1.02);
@@ -129,18 +129,27 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  background-color: pink;
 }
 
 .movie-card {
-  width: 18%;
+  width: 333px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
   padding: 10px;
   text-align: center;
-  margin-left:20px;
+  margin: 10px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
 }
-.movie-card  img{
-  height:350x;
 
+.movie-card img {
+  width: 100%;
+  height: 476px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .movie-card:hover {
@@ -153,6 +162,7 @@
   color: white;
   padding: 20px 0;
   width: 100%;
+  border: 4px solid black;
 }
 
 .footer-content {
@@ -161,16 +171,10 @@
   padding: 20px;
 }
 
-.footer-row {
+.footerRow {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.footer-column {
-  width: 22%;
-  min-width: 200px;
-  margin-bottom: 20px;
 }
 
 .footer-heading {
@@ -186,13 +190,6 @@
 .footer-list li {
   margin-bottom: 5px;
   font-size: 14px;
-}
-
-.justujuImage img {
-  height: 120px;
-  width: 330px;
-  object-fit: cover;
-  padding-right: 20px;
 }
 
 .footer-list li:hover {
@@ -216,17 +213,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background:Jet Black;
 }
 
 .modalContent {
-  background: pink;
+  background: #ADD8E6;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
-  border: 2px solid #FFD700;
-  width: 900px;
-  height: 700px;
+  border: 6px solid #ff1493;
+  width: 650px;
+  height: 670px;
 }
 
 .modalContent:hover {
@@ -253,51 +249,41 @@
 .language {
   font-weight: bold;
   margin-top: 5px;
+  font-size: 16px;
 }
 
 .heading {
   text-align: center;
   font-weight: bold;
+  color: black;
 }
 
-.hideRadioInput{
+.hideRadioInput {
   display: none;
 }
-.ratingSize{
-  font-size:25px;
+
+.ratingSize {
+  font-size: 25px;
 }
-
-
-
-
 
 .rating-modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background:lightgreen ;
+  background: lightgreen;
   padding: 20px;
   border-radius: 10px;
   width: 18%;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
   text-align: center;
-  border:2px solid green
-
-  
+  border: 2px solid green;
 }
 
 .rating-modal:hover {
   background: #90ee90;
   box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.5);
-  transform: translate(-50%, -50%) scale(1.05); 
 }
-.hideRadioInput{
-  display: none;
-}
-.ratingSize{
-  font-size:40px;
-}
+
 .stars {
   display: flex;
   justify-content: center;
@@ -305,14 +291,45 @@
   margin-bottom: 10px;
 }
 
-.starButton{
-  border:none;
-background: none;
-
+.starButton {
+  border: none;
+  background: none;
 }
-.closeButton{
+
+.closeButton {
   background-color: #FFD700;
-  border:yellow;
+  border: yellow;
+  font-weight: 40px;
+  border: 5px solid goldenrod;
+}
+
+.imageContainer2 h3,
+.imageContainer1 h3 {
   font-weight: bold;
-  border:5px solid goldenrod;
+  color: white;
+}
+
+html, body {
+  background-color: pink !important;
+}
+
+.movie-card {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.title h2 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.modalButton {
+  border-radius: 10px;
+  background-color: pink;
 }

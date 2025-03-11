@@ -6,7 +6,7 @@ export const MovieDataContext = createContext();
 
 export const MovieDataProvider = ({ children }) => {
   const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState("Ram");
+  const [query, setQuery] = useState("kick");
   const [selectedMovie, setSelectedMovie] = useState();
   const [error, setError] = useState("");
 
@@ -39,7 +39,7 @@ export const MovieDataProvider = ({ children }) => {
       }
     } catch (err) {
       console.error("Fetch error:", err);
-      setError("Something went wrong. Please try again.");
+      <p>setError("Something went wrong. Please try again.")</p>;
     }
   };
 

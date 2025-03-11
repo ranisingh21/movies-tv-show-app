@@ -6,8 +6,8 @@ import Slider from "./slider";
 import HomePage from "./homepage";
 import Footer from "./footer";
 
-
 const Page = () => {
+
   return (
     <MovieDataProvider>
       <Navbar/>
