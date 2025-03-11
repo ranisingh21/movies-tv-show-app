@@ -1,28 +1,24 @@
-import React from "react";;
+import React from "react";
 
-const MovieModal = ({ movie, onClose }) => {
-  console.log(movie,"rani")
+const MovieModal = ({ movie, onClose, avgRating }) => {
   return (
     <div className="modalContainer">
       <div className="modalContent">
-        <button className="close-button" onClick={onClose}>
-          <img className="close-icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="Close" />
+        <button className="modalButton" onClick={onClose}> 
+         Close Button
         </button>
         <h2 className="title">{movie.Title}</h2>
-         <img className="poster" src={movie.Poster} alt={movie.Title} />
-        <p className="plot">{movie.Plot}</p>
-        <p className="year">Year: {movie.Year}</p>
-        <p className="genre">Genre: {movie.Genre}</p>
-        <p className="director">Director: {movie.Director}</p>
-        <p className="language">Language: {movie.Language}</p>
-        <p className="writer">Writer: {movie.Writer}</p> 
-      
+        <img className="poster" src={movie.Poster} alt={movie.Title} />
+        <div className="plot">{movie.Plot}</div>
+        <div className="year">Year: {movie.Year}</div>
+        <div className="genre">Genre: {movie.Genre}</div>
+        <div className="director">Director: {movie.Director}</div>
+        <div className="language">Language: {movie.Language}</div>
+        <div className="writer">Writer: {movie.Writer}</div>
+        <div className="rating">⭐ Average Rating: {avgRating || "No Ratings Yet"}</div>
       </div>
     </div>
   );
 };
 
 export default MovieModal;
-
-
-
