@@ -6,7 +6,7 @@ export const MovieDataContext = createContext();
 
 export const MovieDataProvider = ({ children }) => {
   const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState("kick");
+  const [query, setQuery] = useState("Ram");
   const [selectedMovie, setSelectedMovie] = useState();
   const [error, setError] = useState("");
 

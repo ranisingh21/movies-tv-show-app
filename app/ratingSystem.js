@@ -1,66 +1,62 @@
 
 import { useState, useEffect } from "react";
 
-const StarRate = ({ movie, onClose, updateRatings = () => {} }) => {
+const StarRate = ({ movie, onClose, updateRatings }) => {
   const [rating, setRating] = useState(null);
   const [averageRating, setAverageRating] = useState(0);
-  const [previousRatings, setPreviousRatings] = useState([]);
+  const [ratedOnce, setRatedOnce] = useState(false);
+  const [storedRatings, setStoredRatings] = useState([]);
 
   useEffect(() => {
-    const storedRatings = localStorage.getItem(`ratings-${movie.imdbID}`);
-    const ratingsArray = storedRatings ? JSON.parse(storedRatings) : [];
-
-    setPreviousRatings(ratingsArray);
+    const ratingsArray = JSON.parse(localStorage.getItem(`ratings-${movie.imdbID}`)) || [];
+    setStoredRatings(ratingsArray);
 
     if (ratingsArray.length > 0) {
-      let sum = ratingsArray.reduce((a, b) => a + b, 0);
-      let avg = (sum / ratingsArray.length).toFixed(1);
-      setAverageRating(avg);
-      updateRatings(); 
+      let avg = ratingsArray.reduce((a, b) => a + b, 0) / ratingsArray.length;
+      let roundedAvg = (avg * 10 - (avg * 10) % 1) / 10; 
+      setAverageRating(roundedAvg);
     } else {
       setAverageRating("No Ratings Yet");
     }
 
-    setRating(null);
+    setRatedOnce(false); 
   }, [movie.imdbID]);
+
+  const handleRating = (star) => {
+    if (ratedOnce) {
+      alert("You have already rated this movie. Refresh to rate again.");
+      return;
+    }
+
+    const updatedRatings = [...storedRatings, star];
+    localStorage.setItem(`ratings-${movie.imdbID}`, JSON.stringify(updatedRatings));
+
+    let avg = updatedRatings.reduce((a, b) => a + b, 0) / updatedRatings.length;
+    let roundedAvg = (avg * 10 - (avg * 10) % 1) / 10; 
+    setAverageRating(roundedAvg);
+    setStoredRatings(updatedRatings);
+    setRating(star);
+    setRatedOnce(true);
+
+    updateRatings();
+  };
 
   return (
     <div className="rating-modal">
       <h2>Rate {movie.Title}</h2>
       <h3>Average Rating: {averageRating}</h3>
-
       <div className="stars">
         {[1, 2, 3, 4, 5].map((star) => (
-          <span
-            key={star}
-            style={{
-              cursor: "pointer",
-              fontSize: "24px",
-              color: star <= (rating || 0) ? "#FFD700" : "grey",
-            }}
-            onClick={() => {
-              if (star === rating) {
-                alert("You have already rated this movie.");
-                return;
-              }
-
-              const updatedRatings = [...previousRatings, star];
-              localStorage.setItem(`ratings-${movie.imdbID}`, JSON.stringify(updatedRatings));
-
-              let sum = updatedRatings.reduce((a, b) => a + b, 0);
-              let avg = (sum / updatedRatings.length).toFixed(1);
-              setAverageRating(avg);
-              setPreviousRatings(updatedRatings);
-              setRating(star);
-              updateRatings(); 
-            }}
+          <span 
+            key={star} 
+            style={{ cursor: "pointer", fontSize: "24px", color: star <= (rating || 0) ? "#FFD700" : "grey" }} 
+            onClick={() => handleRating(star)}
           >
             ★
           </span>
         ))}
       </div>
-
-      <button  className="closeButton" onClick={onClose}>Close</button>
+      <button className="closeButton" onClick={onClose}>Close</button>
     </div>
   );
 };
