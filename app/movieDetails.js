@@ -5,7 +5,7 @@ const MovieModal = ({ movie, onClose, avgRating }) => {
     <div className="modalContainer">
       <div className="modalContent">
         <button className="modalButton" onClick={onClose}> 
-         Close Button
+        Close Button
         </button>
         <h2 className="title">{movie.Title}</h2>
         <img className="poster" src={movie.Poster} alt={movie.Title} />
