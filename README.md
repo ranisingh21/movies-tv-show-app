@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Movie Search & Rating App
 
-First, run the development server:
+## Description
+This app allows users to search, view details, and rate movies easily. It fetches data from the OMDb API and displays results in a grid. Clicking on a movie opens a modal with full details. Users can rate movies (1-5 stars), with ratings saved in local storage. The average rating appears in the modal and remains visible even after a page refresh. The footer includes About, Help, Policies, and Social Media.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##  technology
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- React.js – Frontend development
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- OMDb API – Fetching movie data
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Local Storage – Saving user ratings
 
-## Learn More
+- Bootstrap – Styling
 
-To learn more about Next.js, take a look at the following resources:
+## How to Run the Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- git clone https://github.com/your-repo/movie-app.git
 
-## Deploy on Vercel
+- Navigate to the project folder:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- cd movies-tv-show-app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Install dependencies:
+
+- npm install
+
+- Start the development server: 
+
+- npm run dev
+
+## Demo
+
+- Deploy Link: https://movies-tv-show-app.vercel.app/
+
+##  Features
+This movie search and rating app lets users find movies, view details, and give ratings. It fetches data from the OMDb API and shows movies in a grid layout.
+
+- Search & View: Users can search for movies, and results appear with posters  and titles.
+- Movie Details: Clicking a movie opens a popup with full details (title, genre, year, director, writer, language, and plot).
+- Ratings: Users can rate movies (1-5 stars). Ratings are saved in local - storage and shown as an average in the details popup.
+- Footer: Includes links like About, Help, Policies, and Social Media.
+
+##  Open The App In Your Browser:
+
+- http://localhost:3000
+
