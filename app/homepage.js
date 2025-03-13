@@ -8,8 +8,6 @@ const Homepage = () => {
   const [modalContent, setModalContent] = useState(null);
   const [averageRatings, setAverageRatings] = useState({});
 
-  console.log(movies, "movies", selectedMovie, "selectedMovie");
-
   const updateAverageRatings = () => {
     const ratings = {};
     movies.forEach((movie) => {
