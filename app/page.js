@@ -1,19 +1,18 @@
 "use client";
-import React from "react";;
-import { MovieDataProvider, MovieDataContext } from "./context";
-import Navbar from "./navbar"
+import React from "react";
+import { MovieDataProvider } from "./context";
+import Navbar from "./navbar";
 import Slider from "./slider";
 import HomePage from "./homepage";
 import Footer from "./footer";
 
 const Page = () => {
-
   return (
     <MovieDataProvider>
-      <Navbar/>
-      <Slider/>
+      <Navbar />
+      <Slider />
       <HomePage />
-      <Footer/> 
+      <Footer />
     </MovieDataProvider>
   );
 };

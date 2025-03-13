@@ -8,17 +8,35 @@ const Homepage = () => {
   const [modalContent, setModalContent] = useState(null);
   const [averageRatings, setAverageRatings] = useState({});
 
+  console.log(movies, "movies", selectedMovie, "selectedMovie");
+
   const updateAverageRatings = () => {
     const ratings = {};
     movies.forEach((movie) => {
-      const storedRatings = JSON.parse(localStorage.getItem(`ratings-${movie.imdbID}`)) || [];
-      if (storedRatings.length > 0) {
-        const avg = storedRatings.reduce((sum, r) => sum + r, 0) / storedRatings.length;
-        ratings[movie.imdbID] = avg.toFixed(1);
+      const ratingsFromStorage = localStorage.getItem(`ratings-${movie.imdbID}`);
+      const parsedRatings = JSON.parse(ratingsFromStorage);
+      let storedRatings;
+      let sum = 0;
+
+      if (parsedRatings) {
+        storedRatings = parsedRatings;
       } else {
-        ratings[movie.imdbID] = 0;
+        storedRatings = [];
       }
+
+      if (storedRatings.length > 0) {
+        sum = storedRatings.reduce((total, rating) => total + rating, 0);
+      }
+
+      let avg;
+      if (storedRatings.length > 0) {
+        avg = (sum / storedRatings.length).toFixed(1);
+      } else {
+        avg = 0;
+      }
+      ratings[movie.imdbID] = avg;
     });
+
     setAverageRatings(ratings);
   };
 
@@ -26,48 +44,52 @@ const Homepage = () => {
     updateAverageRatings();
   }, [movies]);
 
+  let content;
+  if (movies.length === 0) {
+    content = <div className="no-data"> 🚫 Data Not Found</div>;
+  } else {
+    content = (
+      <div className="movie-container">
+        {movies.map((movie) => {
+          let poster;
+          if (movie.Poster !== "N/A") {
+            poster = (
+              <img
+                src={movie.Poster}
+                alt={movie.Title}
+                className="movie-poster"
+                onClick={() => {
+                  fetchMovies(movie.imdbID);
+                  setModalContent({ type: "movie", movie });
+                }}
+              />
+            );
+          } else {
+            poster = <div className="no-poster">Photo Not Available</div>;
+          }
+
+          return (
+            <div key={movie.imdbID} className="movie-card">
+              {poster}
+              <div className="movie-title">{movie.Title}</div>
+              <div className="average">⭐ Avg: {averageRatings[movie.imdbID]}/5</div>
+              <button
+                className="starButton"
+                onClick={() => setModalContent({ type: "rating", movie })}
+              >
+                ⭐
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
   return (
     <div>
       <h1 className="heading">Movie List</h1>
-
-      {movies.length === 0 ? (
-        <div className="no-data"> 🚫 Data Not Found</div>
-      ) : (
-        <div className="movie-container">
-          {movies.map((movie) => {
-            let poster;
-            if (movie.Poster !== "N/A") {
-              poster = (
-                <img
-                  src={movie.Poster}
-                  alt={movie.Title}
-                  className="movie-poster"
-                  onClick={() => {
-                    fetchMovies(movie.imdbID);
-                    setModalContent({ type: "movie", movie });
-                  }}
-                />
-              );
-            } else {
-              poster = <div className="no-poster">Photo Not Available</div>;
-            }
-
-            return (
-              <div key={movie.imdbID} className="movie-card">
-                {poster}
-                <div className="movie-title">{movie.Title}</div>
-                <div className="average">⭐ Avg Rating: {averageRatings[movie.imdbID]}/5</div>
-                <button
-                  className="starButton"
-                  onClick={() => setModalContent({ type: "rating", movie })}
-                >
-                  ⭐
-                </button>
-              </div>
-            );
-          })}
-        </div>
-      )}
+      {content}
 
       {modalContent?.type === "movie" && selectedMovie && (
         <MovieModal
