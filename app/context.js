@@ -6,9 +6,8 @@ export const MovieDataContext = createContext();
 
 export const MovieDataProvider = ({ children }) => {
   const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState("Ram");
+  const [query, setQuery] = useState("kick");
   const [selectedMovie, setSelectedMovie] = useState();
-  const [error, setError] = useState("");
 
   const apiKey = "8d887131";
 
@@ -24,10 +23,8 @@ export const MovieDataProvider = ({ children }) => {
       const data = await res.json();
 
       if (data.Response === "False") {
-        setError("No movies found!");
-        setMovies([]);
+        setMovies([])
       } else {
-        setError("");
         if (movieId) {
           setSelectedMovie(data);
         } else {
@@ -36,7 +33,6 @@ export const MovieDataProvider = ({ children }) => {
       }
     } catch (err) {
       console.error("Fetch error:", err);
-      <p>setError("Something went wrong. Please try again.")</p>;
     }
   };
 
@@ -46,7 +42,7 @@ export const MovieDataProvider = ({ children }) => {
 
   return (
     <MovieDataContext.Provider
-      value={{ movies, setQuery, fetchMovies, selectedMovie, error }}
+      value={{ movies, setQuery, fetchMovies, selectedMovie }}
     >
       {children}
     </MovieDataContext.Provider>
