@@ -15,9 +15,9 @@ export const MovieDataProvider = ({ children }) => {
     try {
       let url;
       if (movieId !== undefined) {
-        url = `http://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`;
+        url = `https://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`;
       } else {
-        url = `http://www.omdbapi.com/?s=${query}&apikey=${apiKey}`;
+        url = `https://www.omdbapi.com/?s=${query}&apikey=${apiKey}`;
       }
       const res = await fetch(url);
       const data = await res.json();
