@@ -16,8 +16,8 @@ const Homepage = () => {
   
   const [modalContent, setModalContent] = useState(null);
   const [averageRatings, setAverageRatings] = useState({});
-  const [localPage, setLocalPage] = useState(1); // for showing 5 per page
-  const moviesPerPage = 12;
+  const [localPage, setLocalPage] = useState(1);
+  const moviesPerPage = 5;
 
   const startIndex = (localPage - 1) * moviesPerPage;
   const endIndex = startIndex + moviesPerPage;
@@ -59,8 +59,7 @@ const Homepage = () => {
     updateAverageRatings();
   }, [movies]);
 
-  // Calculate total pages (OMDb API returns 10 results per page)
-  const totalPages = Math.ceil(totalResults / 10);
+  const totalPages = Math.ceil(totalResults / moviesPerPage );
 
   let content;
   if (movies.length === 0) {

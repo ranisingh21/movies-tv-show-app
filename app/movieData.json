@@ -1,155 +1,343 @@
 {
-    "kick": {
-      "Search": [
+  "results": {
+    "Avengers": {
+      "totalResults": "167",
+      "items": [
         {
-          "Title": "Kick-Ass",
-          "Year": "2010",
-          "imdbID": "tt1250777",
+          "Title": "The Avengers",
+          "Year": "2012",
+          "imdbID": "tt0848228",
           "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BMTMzNzEzMDYxM15BMl5BanBnXkFtZTcwMTc0NTMxMw@@._V1_SX300.jpg"
+          "Poster": "https://m.media-amazon.com/images/..."
         },
         {
-          "Title": "Kick-Ass 2",
-          "Year": "2013",
-          "imdbID": "tt1650554",
+          "Title": "Avengers: Endgame",
+          "Year": "2019",
+          "imdbID": "tt4154796",
           "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ4OTQxNzc0N15BMl5BanBnXkFtZTcwOTQxOTU5OQ@@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Kick",
-          "Year": "2014",
-          "imdbID": "tt2372222",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BMTUyMTg0MTA1OF5BMl5BanBnXkFtZTgwMDg2MjMwMjE@._V1_SX300.jpg"
-        },
-        {
-          "Title": "3 Ninjas Kick Back",
-          "Year": "1994",
-          "imdbID": "tt0109015",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BZDA1MWI2NjgtYWU5OS00MzJjLTkyOGMtZjMxYjRkNDA5ZWQyXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Kick Buttowski: Suburban Daredevil",
-          "Year": "2010–2012",
-          "imdbID": "tt1600757",
-          "Type": "series",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BZTk3OGMwMWMtOWYwYS00MjUzLWJlY2EtNzUyOWExYmQ2ZTQ1XkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Kick",
-          "Year": "2009",
-          "imdbID": "tt1579592",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNTJkMGUzNTctZjA5OC00NDY1LThlNjctYjFiMzI2MmFmNjNkXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "The Goalie's Anxiety at the Penalty Kick",
-          "Year": "1972",
-          "imdbID": "tt0066773",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BN2Q0MWM2MTItZDljMy00ZDVmLTlhNDUtNjc2ZTc4ZGMxZThhXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Gotta Kick It Up!",
-          "Year": "2002",
-          "imdbID": "tt0299943",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNmU2N2I5OTEtNGU1My00OTAwLWEzMWQtNzc0Y2UwMDkwYzQ3XkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Kick 2",
-          "Year": "2015",
-          "imdbID": "tt4958666",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BODlhMDgwNWEtN2FmZS00NTA3LTk5ODItNjM5ODg3MjJlNGVjXkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg"
-        },
-        {
-          "Title": "Kick-Heart",
-          "Year": "2013",
-          "imdbID": "tt2753048",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNjU0MzM0MDI3NF5BMl5BanBnXkFtZTcwODcwMjMzOQ@@._V1_SX300.jpg"
+          "Poster": "https://m.media-amazon.com/images/..."
         }
-      ],
-      "totalResults": "319",
-      "Response": "True"
+      ]
     },
-    "dil": {
-      "Search": [
+    "Kick": {
+      "totalResults": "319",
+      "items": [
         {
-          "Title": "Dil Bechara",
-          "Year": "2020",
-          "imdbID": "tt8110330",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BMDQ5N2QwNGMtNDNjOC00ZmM4LWE2NGYtZjc1MGIzMjhmMzkxXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Dil Chahta Hai",
-          "Year": "2001",
-          "imdbID": "tt0292490",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BYjY4NzgzNTQtZDhiNi00ZGJiLWIzMWQtNDg3YzkyNTdkZjAyXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Dil Se..",
-          "Year": "1998",
-          "imdbID": "tt0164538",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOGU3NGY5ZWUtMWQxOS00ZTMzLWJjNTEtMjkyZDVlY2E4OGZmXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Ae Dil Hai Mushkil",
-          "Year": "2016",
-          "imdbID": "tt4559006",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BYTMwMjExMjMtZjIyYi00NzM4LWE4YWItN2FhMDMyZTRhMDQ0XkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Dil To Pagal Hai",
-          "Year": "1997",
-          "imdbID": "tt0118983",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNjU1ZGI1MDctN2IzZi00ZDU3LTk5MTEtYTRkMTU3ZDI0ZTE4XkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Dil Dhadakne Do",
-          "Year": "2015",
-          "imdbID": "tt4110568",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BZmExOTlmNDAtYWMzZC00NzEyLWFhYmYtNTgwMjZiMDRhMDQyXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Rehnaa Hai Terre Dil Mein",
-          "Year": "2001",
-          "imdbID": "tt0299108",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOGRhODRiZTctYzVhNS00ZWJmLThmZWYtMTEwYWI3MWU0ZWVlXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Phir Bhi Dil Hai Hindustani",
-          "Year": "2000",
-          "imdbID": "tt0222270",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNTQ1YzAxZjgtNjAyNy00MmZhLThjMjItNTFkNzhlNjBiMDFjXkEyXkFqcGc@._V1_SX300.jpg"
-        },
-        {
-          "Title": "Dil",
+          "Title": "Kick Off 2",
           "Year": "1990",
-          "imdbID": "tt0099429",
-          "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BNWM5YTM1MDItMmViYy00NDliLWEwYWQtYTVjOGY3ODllZjEzXkEyXkFqcGc@._V1_SX300.jpg"
+          "imdbID": "tt1370382",
+          "Type": "game",
+          "Poster": "https://m.media-amazon.com/images/..."
         },
         {
-          "Title": "Har Dil Jo Pyar Karega...",
-          "Year": "2000",
-          "imdbID": "tt0250415",
+          "Title": "Kick Off",
+          "Year": "2010",
+          "imdbID": "tt1592559",
           "Type": "movie",
-          "Poster": "https://m.media-amazon.com/images/M/MV5BOWI3M2RmMTktMjFiYi00MWZmLTgzYTYtZDdmZjUxYmI1ZTI0XkEyXkFqcGc@._V1_SX300.jpg"
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNjM1YjQxMGQtMzA2Ni00YzY1LThiMjQtN2IwMWI2ZmYzZDM1XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Kick in Iran",
+          "Year": "2010",
+          "imdbID": "tt1562347",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMjMyNGJhZTMtYmU0Zi00YjNhLTg2MGItYjczMjdjM2E0Nzg2XkEyXkFqcGdeQXVyNzg4MTIyODc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Death Kick",
+          "Year": "1998",
+          "imdbID": "tt2505842",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMzA2NDI0YzItYTIzNy00M2RhLTk1ZGYtOGY0MDU0ODAxYTIwXkEyXkFqcGdeQXVyMTg2NjYzOA@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Demon of the Kick",
+          "Year": "1970–",
+          "imdbID": "tt2903424",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BYzI4YzliMDAtNWQwMi00YzM5LTljYTgtYWMxN2IzNjU4NzJlXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Kick Like a Girl",
+          "Year": "2008",
+          "imdbID": "tt1263689",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODYxMzIwNDU3N15BMl5BanBnXkFtZTgwOTM1NjU0NjE@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Murt Ramirez Wants to Kick My Ass",
+          "Year": "2012",
+          "imdbID": "tt1717669",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMjI3Mzg0OTkwN15BMl5BanBnXkFtZTgwMDUwNDc4MDE@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Kick That Habit",
+          "Year": "1989",
+          "imdbID": "tt0097658",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZjE0YjM0Y2YtYWY0Mi00Nzc4LWIyOTItZDk5ZWRiYTIyMzk2XkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Kick Me Down",
+          "Year": "2009",
+          "imdbID": "tt0962710",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5Njc2NTAzN15BMl5BanBnXkFtZTgwNzAwNDU2NTE@._V1_SX300.jpg"
+        },
+        {
+          "Title": "MC5: Kick Out the Jams",
+          "Year": "1999",
+          "imdbID": "tt0477449",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZjg0NWVjNzYtMjA0MC00ZmIyLWI3M2UtMmNjODk3YzM3ZmUxXkEyXkFqcGdeQXVyNDY0NjEwNTE@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Roy Chubby Brown: Kick-Arse Chubbs",
+          "Year": "2006",
+          "imdbID": "tt1075035",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMDQzZmMxN2ItNTE4Yi00ODgzLWFmN2YtNjA2NjlkOWY2ZmMxXkEyXkFqcGdeQXVyNTM2NjkzNjM@._V1_SX300.jpg"
         }
-      ],
-      "totalResults": "514",
-      "Response": "True"
+      ]
+    },
+    "leela": {
+      "totalResults": "51",
+      "items": [
+        {
+          "Title": "Goliyon Ki Raasleela Ram Leela",
+          "Year": "2013",
+          "imdbID": "tt2215477",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMzQ4YWViNTgtOWM4OC00Y2VlLThhN2EtMjIxMzRmMjkwMDRhXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Lakhan Leela Bhargava",
+          "Year": "2023–",
+          "imdbID": "tt28622072",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BN2JhMTM3NTktODNmMi00NDk3LTgzYTQtNzVjNjgzODI2YzdmXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Ek Paheli Leela",
+          "Year": "2015",
+          "imdbID": "tt4500734",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNmQwMzc1OWQtNzJlNC00NzcxLTgwYzAtZGRkNzgyZDE0ZjYwXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Krishna and His Leela",
+          "Year": "2020",
+          "imdbID": "tt11773276",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZWFkYWU4ZDMtZWJkZi00NzBmLTgyYmMtMmFiODFjM2Q4ZTczXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Leela",
+          "Year": "2016",
+          "imdbID": "tt5508592",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZGM2NDRiMmMtYzRlOS00OTRjLTlkODItZWRmZDYzZTlkOTAzXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Leela",
+          "Year": "2002",
+          "imdbID": "tt0300115",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNjQwZjkxYWUtMzdjOC00MWMzLWFhZjUtMmY5YWExZWI3ZWM0XkEyXkFqcGdeQXVyMTEyMDcwNw@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Krishna Leela",
+          "Year": "2015",
+          "imdbID": "tt3813880",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNDgzZGJmMGItN2I0NC00NmYzLWExODItMTJlNzcyNTg0ODc2XkEyXkFqcGdeQXVyMzU0ODc1MTQ@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Leela Vinodam",
+          "Year": "2024–",
+          "imdbID": "tt33069752",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BZGU3YTFkMjktZDViNC00NWUzLWE4OWMtZmE1YjIxNzRiYzA0XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Shri Krishna Leela",
+          "Year": "1971",
+          "imdbID": "tt0270666",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzg2MjM4MDMtMzI2YS00NjMwLWIxZWItNWE5YmRmZTc5MWJjXkEyXkFqcGdeQXVyMTQwMzQ1MA@@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Leela",
+          "Year": "2006",
+          "imdbID": "tt0857386",
+          "Type": "movie",
+          "Poster": "N/A"
+        }
+      ]
+    },
+    "Dilwale": {
+      "totalResults": "50",
+      "items": [
+        {
+          "Title": "Dilwale Dulhania Le Jayenge",
+          "Year": "1995",
+          "imdbID": "tt0112870",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/..."
+        }
+      ]
+    },
+    "rani": {
+      "totalResults": "50",
+      "items": [
+        {
+          "Title": "Rocky Aur Rani Kii Prem Kahaani",
+          "Year": "2023",
+          "imdbID": "tt14993250",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BYTE2YTZlODgtMTRiNS00YjZkLTljN2YtNTM3ZTQ2MzcwZGNiXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Raja Rani",
+          "Year": "2013",
+          "imdbID": "tt3203910",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNTBmM2U2ZDYtYzQ2Ny00N2ZiLWIzODItOGFiMTA0ODM2NDA1XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Revolver Rani",
+          "Year": "2014",
+          "imdbID": "tt3290688",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOGJlNDljNTEtNjgwZC00YWVjLThmODItZjkzZmJkMjQ3YTA2XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Mr. Rani",
+          "Year": "2025",
+          "imdbID": "tt28252581",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMjNlNTIyYTUtNDZkZi00ZmVmLWE0ZjAtY2YzMzJiZjNhODkyXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Malli Malli Idi Rani Roju",
+          "Year": "2015",
+          "imdbID": "tt4431392",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BODUwZTA5ZWQtMDJkNC00NzRhLTkxMjEtMGFlNzc5MzU1MzAxXkEyXkFqcGdeQXVyNTUzMTc1NjE@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Roop Ki Rani Choron Ka Raja",
+          "Year": "1993",
+          "imdbID": "tt0107986",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5ODQ2NDM1N15BMl5BanBnXkFtZTgwNTE2MzUzMzE@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Raja Vaaru Rani Gaaru",
+          "Year": "2019",
+          "imdbID": "tt10905616",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOTYzMjBjMzAtNTczNy00NGE1LTg3YzktODE4ZTBhOTFlYzA5XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Rani Padmini",
+          "Year": "2015",
+          "imdbID": "tt4680564",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BNzUwY2QwYjktMTQxOS00ZTMyLTliZWMtNWU5MzkzY2IyZTRjXkEyXkFqcGdeQXVyMzQ5Njc3NzU@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Machhli Jal Ki Rani Hai",
+          "Year": "2014",
+          "imdbID": "tt2208248",
+          "Type": "movie",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BOGU2ZjIwM2EtYTkwZC00OWUyLWExYTMtYjc2ZjA1MjFmOWZiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"
+        },
+        {
+          "Title": "Ek Veer Stree Ki Kahaani... Jhansi Ki Rani",
+          "Year": "2009–2011",
+          "imdbID": "tt1685078",
+          "Type": "series",
+          "Poster": "https://m.media-amazon.com/images/M/MV5BMWMzYmY0OWUtYjEzYS00MGFiLWIzMmItZmVmYWE4MGUwYjY5XkEyXkFqcGc@._V1_SX300.jpg"
+        }
+      ]
+    },
+    "dil se": {
+    "totalResults": "30",
+    "items":[
+      {
+      "Title": "Dil Se..",
+      "Year": "1998",
+      "imdbID": "tt0164538",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOGU3NGY5ZWUtMWQxOS00ZTMzLWJjNTEtMjkyZDVlY2E4OGZmXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Dil Se Dil Tak",
+      "Year": "2017–2018",
+      "imdbID": "tt7731532",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMmNmMzhhNGUtNjY3Mi00YWE1LThkYTItMjBkZjFmZjgzMDY5XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Koi Mere Dil Se Poochhe",
+      "Year": "2002",
+      "imdbID": "tt0306840",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOGNkMTdjY2EtYjk3ZC00MWYxLTg5NjctMjdmMTg3MTQ2YzA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Dil Se Di Dua... Saubhagyavati Bhava?",
+      "Year": "2011–2013",
+      "imdbID": "tt5919848",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZDkwNWM4NGItNzhiMS00MTQ5LWI1ZTktZDVmNWFkNDNmMWQ2XkEyXkFqcGdeQXVyODAzNzAwOTU@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Jaana Na Dil Se Door",
+      "Year": "2016–2017",
+      "imdbID": "tt7763100",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZTBlMzU3YmEtNDMyOS00ODczLThkZTUtNDlhNjY1NWZjNzY4XkEyXkFqcGdeQXVyODY1MDkwOQ@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Do Dil Bandhe Ek Dori Se",
+      "Year": "2013–2014",
+      "imdbID": "tt3430928",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZDc1NjdmMDMtMmY2NS00NzAyLTlkOGQtMjFjYWQ1MzYwM2E0XkEyXkFqcGdeQXVyNDk4MjI1NDQ@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Dil Se Mile Dil",
+      "Year": "1978",
+      "imdbID": "tt0357602",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BN2EzYjgwZDUtNjhmNi00OThkLWJhZjAtNDE1YjMxOWMxYmU5XkEyXkFqcGdeQXVyMDkwNTkwNg@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Dil Ki Nazar Se Khoobsurat",
+      "Year": "2013–",
+      "imdbID": "tt2764882",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOTNmNzE2MjUtOWJmNy00NDA4LThjOWItZDM0ZDE4ZWUzMzcyXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Pukaar Dil Se Dil Tak",
+      "Year": "2024–",
+      "imdbID": "tt32454717",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYzBiOWQ5NDUtMmRkZC00YzM1LWI3MjgtM2VmMmEyYjNmMjQxXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Dil Se Pooch... Kidhar Jaana Hai",
+      "Year": "2006",
+      "imdbID": "tt0979875",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMmU5OGE1OGUtMmNjYi00MDM2LTlhZWQtNTNhMDhmZTZkMDY2XkEyXkFqcGdeQXVyMTg3MzgxNjM@._V1_SX300.jpg"
     }
+    ]
   }
-  
+    
+  }
+}
