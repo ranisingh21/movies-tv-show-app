@@ -4,9 +4,26 @@ import StarRate from "./ratingSystem";
 import MovieModal from "./movieDetails";
 
 const Homepage = () => {
-  const { movies, fetchMovies, selectedMovie } = useContext(MovieDataContext);
+  const { 
+    movies, 
+    fetchMovies, 
+    selectedMovie, 
+    currentPage,
+    totalResults,
+    goToNextPage,
+    goToPrevPage
+  } = useContext(MovieDataContext);
+  
   const [modalContent, setModalContent] = useState(null);
   const [averageRatings, setAverageRatings] = useState({});
+  const [localPage, setLocalPage] = useState(1);
+  const moviesPerPage = 5;
+
+  const startIndex = (localPage - 1) * moviesPerPage;
+  const endIndex = startIndex + moviesPerPage;
+  const visibleMovies = movies.slice(startIndex, endIndex);
+
+
 
   const updateAverageRatings = () => {
     const ratings = {};
@@ -42,13 +59,15 @@ const Homepage = () => {
     updateAverageRatings();
   }, [movies]);
 
+  const totalPages = Math.ceil(totalResults / moviesPerPage );
+
   let content;
   if (movies.length === 0) {
     content = <div className="no-data"> 🚫 Data Not Found</div>;
   } else {
     content = (
       <div className="movie-container">
-        {movies.map((movie) => {
+        {visibleMovies.map((movie) => {
           let poster;
           if (movie.Poster !== "N/A") {
             poster = (
@@ -63,7 +82,10 @@ const Homepage = () => {
               />
             );
           } else {
-            poster = <div className="no-poster">Photo Not Available</div>;
+            poster = <div className="no-poster"  onClick={() => {
+                  fetchMovies(movie.imdbID);
+                  setModalContent({ type: "movie", movie });
+                }}>Photo Not Available</div>;
           }
 
           return (
@@ -88,6 +110,21 @@ const Homepage = () => {
     <div>
       <h1 className="heading">Movie List</h1>
       {content}
+      <div className="pagination">
+        <button 
+          onClick={goToPrevPage} 
+          disabled={currentPage === 1}
+        >
+          Previous
+        </button>
+        <span> Page {currentPage} of {totalPages} </span>
+        <button 
+          onClick={goToNextPage} 
+          disabled={currentPage >= totalPages}
+        >
+          Next
+        </button>
+      </div>
 
       {modalContent?.type === "movie" && selectedMovie && (
         <MovieModal
